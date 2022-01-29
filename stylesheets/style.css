@@ -14,6 +14,7 @@
     justify-content: space-between;
     width: 100%;
     height: auto;
+    position: fixed;
 }
 #navbar ul {
     display: inline-flex;
@@ -54,5 +55,81 @@
 
     border: 3px solid #000000;
     border-radius: 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#home {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+}
+.home-container {
+    width: 900px;
+}
+#hello {
+    position: relative;
+    width: 600px;
+    height: 99px;
+    left: -270px;
+    top: 350px;
+    font-family: Pangolin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 90px;
+    color: #000000;
+}
+
+#a-web-developer {
+    position: relative;
+    width: 800px;
+    height: 550px;
+    left: -270px;
+    top: 300px;
+    background: #DBA37D;
+    border-radius: 20px;
+    padding: 20px;
+}
+#a-web-developer h1{
+    font-family: Pangolin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    text-shadow: 10px 20px 5px rgb(0 0 0 / 25%);
+}
+#avatar {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 450px;
+    top: -500px;
+    z-index: -1;
+}
+#avatar-img {
+    border-radius: 20px;
+}
+#about-me {
+    font-family: Pangolin;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 700px;
+    top: -400px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 60px;
+}
+#about-me a {
+    width: 200px;
+    height: auto;
+    text-decoration:none;
+    color: #000000;
+}
+#about-me:hover {
+    left: 800px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
