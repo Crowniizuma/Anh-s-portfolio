@@ -5,19 +5,17 @@
         <title>Anh's portfolio</title>
         <link rel="stylesheet" href="./stylesheets/style.css">
         <script src="JavaScript/script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     </head>
     <body>
         <header>
             <nav id="navbar">
                 <img id="logo" src="./photos and logos/logo.png" height="122px" width="151px" alt="logo">
-                <!--
                 <ul>
-                    <li><a id="Home" class="navbar" href="">Home</a></li>
-                    <li><a id="About" class="navbar" href="">About</a></li>
-                    <li><a id="Work" class="navbar" href="">Work</a></li>
-                    <li><a id="Contact" class="navbar" href="">Contact</a></li>
+                    <li v-for="item in items">
+                      <a :id="item.text" class="navbar">{{item.text}}</a>
+                    </li>
                 </ul>
-                -->
             </nav>
         </header>
         <main>
