@@ -1,10 +1,11 @@
 @font-face
 {
-    font-family: 'Pangolin';
-    src:url(./Pangolin-Regular.ttf);
+    font-family: 'Bellota';
+    src:url(./Bellota-Bold.ttf);
 }
+
 .body {
-    font-family: 'Pangolin', serif;
+    font-family: 'Bellota', serif;
 }
 #navbar {
     display: inline-flex;
@@ -15,6 +16,14 @@
     width: 100%;
     height: auto;
     position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+}
+#logo {
+    height: 100px;
+    width: auto;
+    margin-left: 15px;
 }
 #navbar ul {
     display: inline-flex;
@@ -26,7 +35,7 @@
 #navbar a {
     text-decoration: none;
     color: #000000;
-    font-family: 'Pangolin';
+    font-family: 'Bellota';
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
@@ -45,7 +54,7 @@
     margin-bottom: 50px;
     /*left: 537px;
     top: 20px;*/
-    font-family: Pangolin;
+    font-family: Bellota;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
@@ -58,43 +67,52 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #home {
-    display:flex;
+    display: flex;
     width: 100%;
     justify-content: center;
     height: 100vh;
+    margin-top: 99.984px;
 }
 .home-container {
-    width: 900px;
+    width: 100vw;
 }
 #hello {
     position: relative;
-    width: 600px;
-    height: 99px;
-    left: -270px;
-    top: 350px;
-    font-family: Pangolin;
+    width: 40vw;
+    height: 5vw;
+    left: 19vw;
+    top: 5vw;
+    font-family: Bellota;
     font-style: normal;
     font-weight: normal;
-    font-size: 100px;
-    line-height: 90px;
+    font-size: 4vw;
+    line-height: 5vw;
     color: #000000;
 }
 
 #a-web-developer {
     position: relative;
-    width: 800px;
-    height: 550px;
-    left: -270px;
-    top: 300px;
+    width: 30vw;
+    height: auto;
+    left: 19vw; 
+    top: 6vw;
     background: #DBA37D;
     border-radius: 20px;
-    padding: 20px;
+    padding: 1.5vw;
+    animation-timing-function: ease-in;
+    animation-name: a-web-developer;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+@keyframes a-web-developer {
+    0% {left: 5vw; top: 12vw}
+    100% {left: 19vw; top: 6vw;}    
 }
 #a-web-developer h1{
-    font-family: Pangolin;
+    font-family: Bellota;
     font-style: normal;
     font-weight: normal;
-    font-size: 150px;
+    font-size: 5vw;
     margin: 0;
     padding: 0;
     color: #FFFFFF;
@@ -104,32 +122,52 @@
     position: relative;
     width: fit-content;
     height: fit-content;
-    left: 450px;
-    top: -500px;
+    left: 48vw;
+    top: -27vw;
     z-index: -1;
+    animation-timing-function: ease-in;
+    animation-name: avatar;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+@keyframes avatar {
+    0% {left: 60vw; top: -30vw}
+    100% {left: 48vw; top: -27vw;}    
 }
 #avatar-img {
     border-radius: 20px;
+    height: 20vw;
+    width: auto;
 }
 #about-me {
-    font-family: Pangolin;
+    font-family: Bellota;
     position: relative;
     width: fit-content;
     height: fit-content;
-    left: 700px;
-    top: -400px;
+    left: 60vw;
+    top: -23vw;
     font-style: normal;
     font-weight: normal;
-    font-size: 70px;
-    line-height: 60px;
+    font-size: 3vw;
+    transition: padding 0.5s;
 }
 #about-me a {
-    width: 200px;
+    width: 20vw;
     height: auto;
-    text-decoration:none;
+    text-decoration: none;
     color: #000000;
+    opacity: 100%;
+    animation-name: about-me;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes about-me {
+    0% {opacity: 0%}
+    50% {opacity: 0%}
+    100% {opacity: 100%}
 }
 #about-me:hover {
-    left: 800px;
+    transition: padding 0.5s;
+    padding-left: 5vw;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
