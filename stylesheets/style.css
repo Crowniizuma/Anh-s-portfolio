@@ -59,11 +59,7 @@
     font-weight: normal;
     font-size: 48px;
     line-height: 60px;
-
-    color: #000000;
-
-    border: 3px solid #000000;
-    border-radius: 10px;
+    color: #000000;  
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #home {
@@ -75,6 +71,9 @@
 }
 .home-container {
     width: 100vw;
+    background-color: rgb(245,232,232);
+    z-index: 0;
+    overflow: hidden;
 }
 #hello {
     position: relative;
@@ -87,7 +86,8 @@
     font-weight: normal;
     font-size: 4vw;
     line-height: 5vw;
-    color: #000000;
+    color:rgb(0, 0, 0);
+    text-shadow: 0px 4px 4px rgba(104, 104, 104, 0.25);
 }
 
 #a-web-developer {
@@ -96,13 +96,15 @@
     height: auto;
     left: 19vw; 
     top: 6vw;
-    background: #DBA37D;
+    background: #ffffff;
     border-radius: 20px;
     padding: 1.5vw;
     animation-timing-function: ease-in;
     animation-name: a-web-developer;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
+    z-index: 3;
+    border:3px solid rgb(0, 0, 0);
 }
 @keyframes a-web-developer {
     0% {left: 5vw; top: 12vw}
@@ -115,8 +117,8 @@
     font-size: 5vw;
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
-    text-shadow: 10px 20px 5px rgb(0 0 0 / 25%);
+    color: #000000;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
 #avatar {
     position: relative;
@@ -124,11 +126,11 @@
     height: fit-content;
     left: 48vw;
     top: -27vw;
-    z-index: -1;
     animation-timing-function: ease-in;
     animation-name: avatar;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
+    z-index: 2;
 }
 @keyframes avatar {
     0% {left: 60vw; top: -30vw}
@@ -155,7 +157,7 @@
     width: 20vw;
     height: auto;
     text-decoration: none;
-    color: #000000;
+    color: rgb(0, 0, 0);
     opacity: 100%;
     animation-name: about-me;
     animation-duration: 3s;
@@ -171,3 +173,26 @@
     padding-left: 5vw;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.decor {
+    height: 40vw;
+    width: 40vw;
+    border-radius: 50%;
+}
+#decor-1 {
+    position: relative;
+    left: 75vw;
+    top:-70vw;
+    background-color: rgb(228, 203, 186);
+    z-index: 1;
+}
+#decor-2 {
+    position: relative;
+    left: -15vw;
+    top:-70vw;
+    background-color: rgb(180, 188, 159);
+    z-index: 1;
+}
+
+
+
+
