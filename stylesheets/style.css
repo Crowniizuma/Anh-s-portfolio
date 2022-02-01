@@ -88,6 +88,7 @@
     line-height: 5vw;
     color:rgb(0, 0, 0);
     text-shadow: 0px 4px 4px rgba(104, 104, 104, 0.25);
+    z-index: 3;
 }
 
 #a-web-developer {
@@ -152,6 +153,7 @@
     font-weight: normal;
     font-size: 3vw;
     transition: padding 0.5s;
+    z-index: 3;
 }
 #about-me a {
     width: 20vw;
@@ -181,14 +183,14 @@
 #decor-1 {
     position: relative;
     left: 75vw;
-    top:-70vw;
+    top:-40vw;
     background-color: rgb(228, 203, 186);
     z-index: 1;
 }
 #decor-2 {
     position: relative;
     left: -15vw;
-    top:-70vw;
+    top:-100vw;
     background-color: rgb(180, 188, 159);
     z-index: 1;
 }
