@@ -66,14 +66,20 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 100vh;
+    height: 50vw;
     margin-top: 99.984px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 .home-container {
     width: 100vw;
     background-color: rgb(245,232,232);
     z-index: 0;
     overflow: hidden;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 #hello {
     position: relative;
@@ -194,7 +200,109 @@
     background-color: rgb(180, 188, 159);
     z-index: 1;
 }
-
+.info {
+    width: 100%;
+    justify-content: center;
+    height: 50vw;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+#myphoto {
+    position: relative;
+    left: 20vw;
+    top: -2vw;
+    width: 15vw;
+    height: auto;
+    border-radius: 20px;
+    z-index: 2;
+}
+#square {
+    position: relative;
+    top: 25vw;
+    left: 15vw;
+    width: 15vw;
+    height: 20vw;
+    background-color: rgb(180, 188, 159);
+    border-radius: 20px;
+    z-index: 1;
+}
+#detail {
+    font-family: Bellota;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    position: relative;
+    top: -30vw;
+    left: 25vw;
+    width: 35vw;
+    border:5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 2.5vw 5vw 2.5vw 15vw;
+    z-index: 0;
+}
+#detail ul {
+    display: inline-flex;
+    flex-direction: row;
+    width: 30vw;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+.skills {
+    height: 5vw;
+    width: auto;
+}
+#detail li {
+    list-style-type: none;
+    font-size: 1.5vw;
+    text-align: center;
+}
+.skill-bar * {
+    box-sizing: border-box;
+}
+.container {
+    width: 30vw;
+    background-color: rgb(245,232,232);
+    height: 2vw;
+}
+.skill {
+    font-size: 1vw;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    height: 2vw;
+    line-height: 1vw;
+}
+.html {
+    width: 15vw;
+    background-color: rgb(180, 188, 159);
+}
+.css {
+    width: 12vw;
+    background-color: rgb(180, 188, 159);
+}
+.JavaScript {
+    width: 9vw;
+    background-color: rgb(180, 188, 159);
+}
+.skills-img {
+    width: 3vw;
+    height: auto;
+    margin-right: 1vw;
+}
+.skills {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;   
+}
+.skill-bar {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 
 
