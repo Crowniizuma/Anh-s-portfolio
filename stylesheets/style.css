@@ -275,17 +275,44 @@
     height: 2vw;
     line-height: 1vw;
 }
+.skill {
+    width: 0;
+}
 .html {
-    width: 15vw;
-    background-color: rgb(180, 188, 159);
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 15vw;
+        background-color: rgb(180, 188, 159);
+    }
 }
 .css {
-    width: 12vw;
-    background-color: rgb(180, 188, 159);
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 12vw;
+        background-color: rgb(180, 188, 159);
+    }
 }
 .JavaScript {
-    width: 9vw;
-    background-color: rgb(180, 188, 159);
+    animation: JS-fill 2s forwards;
+}
+@keyframes JS-fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 9vw;
+        background-color: rgb(180, 188, 159);
+    }
 }
 .skills-img {
     width: 3vw;
@@ -303,6 +330,42 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.skill.skillRun {
+    animation: run 1s ease-in;
+}
+
+@keyframes run {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.info {
+    position: relative;
+    opacity: 0;
+}
+
+.info.active {
+    opacity: 1;
+    animation: fade-bottom 1.5s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(5vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
 
 
 
