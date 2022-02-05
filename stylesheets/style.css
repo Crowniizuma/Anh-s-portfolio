@@ -369,6 +369,7 @@
 
 .work {
     height: 100vw;
+    opacity: 0;
     
 }
 .work.active-work {
