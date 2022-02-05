@@ -52,5 +52,20 @@ function skillRun() {
     }
   }
 }
+
+function revealsWork() {
+  let revealWork = document.querySelectorAll(".work");
+  for (let i = 0; i < revealWork.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = revealWork[i].getBoundingClientRect().top;
+    let elementVisible = 150;
+    if(elementTop < windowHeight - elementVisible) {
+      revealWork[i].classList.add("active-work");
+    } else {
+      revealWork[i].classList.remove("active-work");
+    }
+  }
+}
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", skillRun);
+window.addEventListener("scroll", revealsWork);
