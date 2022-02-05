@@ -203,7 +203,7 @@
 .info {
     width: 100%;
     justify-content: center;
-    height: 50vw;
+    height: 80vw;
     padding: 0;
     margin-left: 0;
     margin-right: 0;
@@ -364,8 +364,68 @@
     }
 }
 
+.work {
+    height: 50vw;
+    
+}
+.work h1 {
+    font-family: Bellota;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5vw;
+    position:relative;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 25vw;
+}
 
+.projects-container {
+    display: inline-flex;
+    flex-direction: column;
+    
+    width: 100%;
+    
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+.projects {
+    display: inline-flex;
+    flex-direction: row;
+    width: 80%;
+    margin-bottom: 13vw;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.projects img {
+    height: 50%;
+    width: 50%;
+    border-radius: 50px;
+    border: 5px solid black;
+}
+.description {
+    width: 55%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;    
+}
+.description-1 {
+    background-color: rgb(245,232,232);
+    margin-left: -5%;
+    border-radius: 50px;
+    border: 5px solid black;
+}
 
-
+.description-2 {
+    background-color: rgb(180, 188, 159);
+    margin-right: -5%;
+    border-radius: 50px;
+    border: 5px solid black;
+    z-index: 1;
+}
+.description-3 {
+    background-color: rgb(228, 203, 186);
+    margin-left: -5%;
+    border-radius: 50px;
+    border: 5px solid black;
+}
 
 

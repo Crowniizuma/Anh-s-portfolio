@@ -2,9 +2,9 @@ var navlist = new Vue({
     el: '#navbar',
     data: {
       items: [
-        { text: 'About', link: ''},
-        { text: 'Work', link: ''},
-        { text: 'Contact', link: ''}
+        { text: 'About', link: '#info'},
+        { text: 'Work', link: '#work'},
+        { text: 'Contact', link: '#contact'}
       ]
     }
   })
