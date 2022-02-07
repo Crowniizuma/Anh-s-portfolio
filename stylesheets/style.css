@@ -1,12 +1,12 @@
-@font-face
-{
+@font-face {
     font-family: 'Bellota';
-    src:url(./Bellota-Bold.ttf);
+    src: url(./Bellota-Bold.ttf);
 }
 
 .body {
     font-family: 'Bellota', serif;
 }
+
 #navbar {
     display: inline-flex;
     flex-direction: row;
@@ -20,11 +20,13 @@
     background-color: white;
     z-index: 999;
 }
+
 #logo {
     height: 100px;
     width: auto;
     margin-left: 15px;
 }
+
 #navbar ul {
     display: inline-flex;
     flex-direction: row;
@@ -32,6 +34,7 @@
     justify-content: right;
     width: 100%;
 }
+
 #navbar a {
     text-decoration: none;
     color: #000000;
@@ -43,11 +46,13 @@
     border: 3px solid #ffffff;
     border-radius: 10px;
 }
+
 #navbar li {
     list-style-type: none;
     margin-left: 2rem;
     padding-right: 2rem;
 }
+
 #navbar a:hover {
     width: 128px;
     height: 42px;
@@ -59,9 +64,10 @@
     font-weight: normal;
     font-size: 48px;
     line-height: 60px;
-    color: #000000;  
+    color: #000000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 #home {
     display: flex;
     width: 100%;
@@ -72,6 +78,7 @@
     margin-left: 0;
     margin-right: 0;
 }
+
 .home-container {
     width: 100vw;
     z-index: 0;
@@ -80,6 +87,7 @@
     margin-left: 0;
     margin-right: 0;
 }
+
 #hello {
     position: relative;
     width: 40vw;
@@ -91,7 +99,7 @@
     font-weight: normal;
     font-size: 4vw;
     line-height: 5vw;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     text-shadow: 0px 4px 4px rgba(104, 104, 104, 0.25);
     z-index: 3;
 }
@@ -100,7 +108,7 @@
     position: relative;
     width: 30vw;
     height: auto;
-    left: 19vw; 
+    left: 19vw;
     top: 6vw;
     background: #ffffff;
     border-radius: 20px;
@@ -110,14 +118,22 @@
     animation-duration: 1.5s;
     animation-iteration-count: 1;
     z-index: 3;
-    border:3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
     background-color: white;
 }
+
 @keyframes a-web-developer {
-    0% {left: 5vw; top: 12vw}
-    100% {left: 19vw; top: 6vw;}    
+    0% {
+        left: 5vw;
+        top: 12vw
+    }
+    100% {
+        left: 19vw;
+        top: 6vw;
+    }
 }
-#a-web-developer h1{
+
+#a-web-developer h1 {
     font-family: Bellota;
     font-style: normal;
     font-weight: normal;
@@ -127,6 +143,7 @@
     color: black;
     text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
+
 #avatar {
     position: relative;
     width: fit-content;
@@ -139,15 +156,24 @@
     animation-iteration-count: 1;
     z-index: 2;
 }
+
 @keyframes avatar {
-    0% {left: 60vw; top: -30vw}
-    100% {left: 48vw; top: -27vw;}    
+    0% {
+        left: 60vw;
+        top: -30vw
+    }
+    100% {
+        left: 48vw;
+        top: -27vw;
+    }
 }
+
 #avatar-img {
     border-radius: 20px;
     height: 20vw;
     width: auto;
 }
+
 #about-me {
     font-family: Bellota;
     position: relative;
@@ -161,6 +187,7 @@
     transition: padding 0.5s;
     z-index: 3;
 }
+
 #about-me a {
     width: 20vw;
     height: auto;
@@ -171,35 +198,47 @@
     animation-duration: 3s;
     animation-iteration-count: 1;
 }
+
 @keyframes about-me {
-    0% {opacity: 0%}
-    50% {opacity: 0%}
-    100% {opacity: 100%}
+    0% {
+        opacity: 0%
+    }
+    50% {
+        opacity: 0%
+    }
+    100% {
+        opacity: 100%
+    }
 }
+
 #about-me:hover {
     transition: padding 0.5s;
     padding-left: 5vw;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .decor {
     height: 40vw;
     width: 40vw;
     border-radius: 50%;
 }
+
 #decor-1 {
     position: relative;
     left: 75vw;
-    top:-40vw;
-    background-color:rgb(228, 203, 186);
+    top: -40vw;
+    background-color: rgb(228, 203, 186);
     z-index: 1;
 }
+
 #decor-2 {
     position: relative;
     left: -15vw;
-    top:-100vw;
+    top: -100vw;
     background-color: rgb(180, 188, 159);
     z-index: 1;
 }
+
 .info {
     width: 100%;
     justify-content: center;
@@ -208,6 +247,7 @@
     margin-left: 0;
     margin-right: 0;
 }
+
 #myphoto {
     position: relative;
     left: 20vw;
@@ -217,6 +257,7 @@
     border-radius: 20px;
     z-index: 2;
 }
+
 #square {
     position: relative;
     top: 25vw;
@@ -227,6 +268,7 @@
     border-radius: 20px;
     z-index: 1;
 }
+
 #detail {
     font-family: Bellota;
     font-style: normal;
@@ -236,12 +278,13 @@
     top: -30vw;
     left: 25vw;
     width: 35vw;
-    border:5px solid rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 20px;
     padding: 2.5vw 5vw 2.5vw 15vw;
     z-index: 0;
     background-color: white;
 }
+
 #detail ul {
     display: inline-flex;
     flex-direction: row;
@@ -250,23 +293,28 @@
     padding: 0;
     justify-content: space-between;
 }
+
 .skill-container {
     height: 5vw;
     width: auto;
 }
+
 #detail li {
     list-style-type: none;
     font-size: 1.5vw;
     text-align: center;
 }
+
 .skill-bar * {
     box-sizing: border-box;
 }
+
 .container {
     width: 30vw;
-    background-color: rgb(245,232,232);
+    background-color: rgb(245, 232, 232);
     height: 2vw;
 }
+
 .skill {
     font-size: 1vw;
     text-align: right;
@@ -276,12 +324,15 @@
     height: 2vw;
     line-height: 1vw;
 }
+
 .skill {
     width: 0;
 }
+
 .html {
     animation: html-fill 2s forwards;
 }
+
 @keyframes html-fill {
     0% {
         width: 0;
@@ -291,9 +342,11 @@
         background-color: rgb(180, 188, 159);
     }
 }
+
 .css {
     animation: css-fill 2s forwards;
 }
+
 @keyframes css-fill {
     0% {
         width: 0;
@@ -303,9 +356,11 @@
         background-color: rgb(180, 188, 159);
     }
 }
+
 .JavaScript {
     animation: JS-fill 2s forwards;
 }
+
 @keyframes JS-fill {
     0% {
         width: 0;
@@ -315,17 +370,20 @@
         background-color: rgb(180, 188, 159);
     }
 }
+
 .skills-img {
     width: 3vw;
     height: auto;
     margin-right: 1vw;
 }
+
 .skill-container {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
+
 .skill-bar {
     display: inline-flex;
     flex-direction: column;
@@ -344,10 +402,11 @@
         opacity: 1;
     }
 }
+
 .info {
     position: relative;
     opacity: 0;
-    background-color: rgb(245,232,232);
+    background-color: rgb(245, 232, 232);
     padding-bottom: 15vw;
 }
 
@@ -368,10 +427,10 @@
 }
 
 .work {
-    height: 100vw;
+    height: 150vw;
     opacity: 0;
-    
 }
+
 .work.active-work {
     opacity: 1;
     animation: fade-bottom-work 1.5s ease-in;
@@ -394,22 +453,26 @@
     width: 80%;
     margin: 5vw 10% auto 10%;
 }
+
 .projects {
     display: inline-flex;
     flex-direction: row;
     width: 100%;
     padding-bottom: 10vw;
 }
+
 .projects img {
     height: 50%;
     width: 50%;
     border-radius: 20px;
 }
+
 .description {
     width: 50%;
     margin-left: 5vw;
     margin-right: 5vw;
 }
+
 .description-1 {
     background-color: white;
 }
@@ -417,12 +480,15 @@
 .description-2 {
     background-color: white;
 }
+
 .description-3 {
     background-color: white;
 }
+
 .work {
     padding-top: 84px;
 }
+
 .title {
     font-family: Bellota;
     font-style: normal;
@@ -440,6 +506,7 @@
     background-color: rgb(180, 188, 159);
     color: white;
 }
+
 .project-name {
     font-family: Bellota;
     font-style: normal;
@@ -449,6 +516,7 @@
     margin-top: 0;
     margin-bottom: 1vw;
 }
+
 .content {
     font-family: Bellota;
     font-style: normal;
@@ -458,7 +526,7 @@
 }
 
 button {
-    background-color:rgb(228, 203, 186);
+    background-color: rgb(228, 203, 186);
     border-color: rgb(228, 203, 186);
     border-style: solid;
     border-radius: 20px;
@@ -471,4 +539,32 @@ button {
     font-size: 2vw;
     font-weight: bold;
     color: white;
+}
+
+.contact {
+    background-color: rgb(180, 188, 159);
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+}
+
+.contact h1 {
+    font-family: Bellota;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.contact-address {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.contact-logo {
+    height: 5vw;
+    width: 5vw;
 }

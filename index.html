@@ -1,105 +1,119 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta lang="UTF-8">
-        <title>Anh's portfolio</title>
-        <link rel="stylesheet" href="./stylesheets/style.css">
-        <script src="JavaScript/script.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <header>
-            <nav id="navbar">
-                <img id="logo" src="./photos and logos/logo.png" alt="logo">
-                <ul>
-                    <li v-for="item in items">
-                      <a :id="item.text" class="navbar" :href="item.link">{{item.text}}</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="home" class="big-home">
-                <div class="home-container">
-                    <h1 id="hello" class="home"></h1>
-                    <div id="a-web-developer" class="home">
-                        <h1>A</h1>
-                        <h1>WEB</h1> 
-                        <h1>DEVELOPER</h1>
-                    </div>
-                    <div id="avatar" class="home">
-                        <img id="avatar-img" src="./photos and logos/Avatar.JPG" alt="avatar">
-                    </div>
-                    <div id="about-me" class="home">
-                        <a href="#info">About me →</a>                   
-                    </div>
-                    <div id="decor-1" class="decor"></div>
-                    <div id="decor-2" class="decor"></div>
-                </div>
-            </section>
-            <section id="info" class="info">
-                <div id="square" class="decor-square"></div>
-                <img id="myphoto" src="./photos and logos/DSCF2165.JPG" alt="my photo">
-                <div id="detail" class="detail">
-                    <p style="color: darksalmon;">Love the beauty of web design and passionate in frontend development. Always be eager to learn new skills. Love to be both an artist and an engineer.</p>
-                    <p style="font-size: 2.5vw;">My skills:</p>
-                    <div class="skill-bar">
-                        <div class="skill-container">
-                            <img class="skills-img" src="photos and logos/icons8-html-5.svg" alt="html5">
-                            <div class="container">
-                                <div class="skill html">50%</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <img class="skills-img" src="photos and logos/icons8-css3 (1).svg" alt="css3">
-                            <div class="container">
-                                <div class="skill css">40%</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <img class="skills-img" src="photos and logos/icons8-javascript-logo.svg" alt="javascript">
-                            <div class="container">
-                                <div class="skill JavaScript">30%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="work" class="work">
-                <h1 class="title">My work</h1>
-                <div class="projects-container">
-                    <div class = "projects projects-1">
-                        <img src="./photos and logos/roman-bozhko-PypjzKTUqLo-unsplash.jpg" alt="projects-1">
-                        <div class="description description-1">
-                            <h1 class="project-name project-name">Project 1</h1>
-                            <p class="content content-1">Love the beauty of web design and passionate in frontend development. Always be eager to learn new skills. </p>
-                            <button><a class="see-projects" href="">See project</a></button>
-                        </div>
-                    </div>
-                    <div class = "projects projects-2">
-                        <div class="description description-2">
-                            <h1 class="project-name project-name">Project 1</h1>
-                            <p class="content content-1">Love the beauty of web design and passionate in frontend development. Always be eager to learn new skills. </p>
-                            <button><a class="see-projects" href="">See project</a></button>
-                        </div>
-                        <img src="./photos and logos/chris-lawton-5IHz5WhosQE-unsplash.jpg" alt="projects-2">
-                    </div>
-                    <div class = "projects projects-3">
-                        <img src="./photos and logos/lauren-mancke-aOC7TSLb1o8-unsplash.jpg" alt="projects-3">
-                        <div class="description description-3">
-                            <h1 class="project-name project-name">Project 1</h1>
-                            <p class="content content-1">Love the beauty of web design and passionate in frontend development. Always be eager to learn new skills. </p>
-                            <button><a class="see-projects" href="">See project</a></button>
-                        </div>
-                    </div>
-                </div>    
-            </section>
-        </main>
-        <footer>
 
-        </footer>
-    </body>
+<head>
+    <meta lang="UTF-8">
+    <title>Anh's portfolio</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <script src="JavaScript/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <img id="logo" src="./photos and logos/logo.png" alt="logo">
+            <ul>
+                <li v-for="item in items">
+                    <a :id="item.text" class="navbar" :href="item.link">{{item.text}}</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="big-home">
+            <div class="home-container">
+                <h1 id="hello" class="home"></h1>
+                <div id="a-web-developer" class="home">
+                    <h1>A</h1>
+                    <h1>WEB</h1>
+                    <h1>DEVELOPER</h1>
+                </div>
+                <div id="avatar" class="home">
+                    <img id="avatar-img" src="./photos and logos/Avatar.JPG" alt="avatar">
+                </div>
+                <div id="about-me" class="home">
+                    <a href="#info">About me →</a>
+                </div>
+                <div id="decor-1" class="decor"></div>
+                <div id="decor-2" class="decor"></div>
+            </div>
+        </section>
+        <section id="info" class="info">
+            <div id="square" class="decor-square"></div>
+            <img id="myphoto" src="./photos and logos/DSCF2165.JPG" alt="my photo">
+            <div id="detail" class="detail">
+                <p style="color: darksalmon;">Love the beauty of web design and passionate in frontend development. Always be eager to learn new skills. Love to be both an artist and an engineer.</p>
+                <p style="font-size: 2.5vw;">My skills:</p>
+                <div class="skill-bar">
+                    <div class="skill-container">
+                        <img class="skills-img" src="photos and logos/icons8-html-5.svg" alt="html5">
+                        <div class="container">
+                            <div class="skill html">50%</div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <img class="skills-img" src="photos and logos/icons8-css3 (1).svg" alt="css3">
+                        <div class="container">
+                            <div class="skill css">40%</div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <img class="skills-img" src="photos and logos/icons8-javascript-logo.svg" alt="javascript">
+                        <div class="container">
+                            <div class="skill JavaScript">30%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work" class="work">
+            <h1 class="title">My work</h1>
+            <div class="projects-container">
+                <div class="projects projects-1">
+                    <img src="./photos and logos/roman-bozhko-PypjzKTUqLo-unsplash.jpg" alt="projects-1">
+                    <div class="description description-1">
+                        <h1 class="project-name project-name">Project 1</h1>
+                        <p class="content content-1">Love the beauty of web design and passionate in frontend development. Always be eager to learn new skills. </p>
+                        <button><a class="see-projects" href="">See project</a></button>
+                    </div>
+                </div>
+                <div class="projects projects-2">
+                    <div class="description description-2">
+                        <h1 class="project-name project-name">Project 1</h1>
+                        <p class="content content-1">Love the beauty of web design and passionate in frontend development. Always be eager to learn new skills. </p>
+                        <button><a class="see-projects" href="">See project</a></button>
+                    </div>
+                    <img src="./photos and logos/chris-lawton-5IHz5WhosQE-unsplash.jpg" alt="projects-2">
+                </div>
+                <div class="projects projects-3">
+                    <img src="./photos and logos/lauren-mancke-aOC7TSLb1o8-unsplash.jpg" alt="projects-3">
+                    <div class="description description-3">
+                        <h1 class="project-name project-name">Project 1</h1>
+                        <p class="content content-1">Love the beauty of web design and passionate in frontend development. Always be eager to learn new skills. </p>
+                        <button><a class="see-projects" href="">See project</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact">
+            <h1>Contact me</h1>
+            <div class="contact-address">
+                <a class="contact-link github-link" href="https://github.com/Crowniizuma" target="_blank">
+                    <img class="contact-logo github-logo" src="./photos and logos/icons8-github.svg" alt="github-logo">
+                </a>
+                <a class="contact-link linkedin-link" href="https://www.linkedin.com/in/nguyen-thi-hoang-anh-b7688a193/" target="_blank">
+                    <img class="contact-logo facebook-logo" src="./photos and logos/icons8-linkedin.svg" alt="linkedin-logo">
+                </a>
+                <a class="contact-link facebook-link" href="https://www.facebook.com/nguyenanhlovefall.bluesky/" target="_blank">
+                    <img class="contact-logo facebook-logo" src="./photos and logos/icons8-facebook.svg" alt="facebook-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
-
-
